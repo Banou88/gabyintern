@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rapport de stage</title>
+	<link rel="stylesheet" type="text/css" href="monstyle.css">
+</head>
+<body>
+
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Fermer &times;</button>
+  <a href="#entreprise" class="w3-bar-item w3-button">L'entreprise</a>
+  <a href="#infra" class="w3-bar-item w3-button">Service infrastructure</a>
+  <a href="#dev" class="w3-bar-item w3-button">Service développement</a>
+  <a href="#merci" class="w3-bar-item w3-button">Remerciements</a>
+</div>
+
+<div id="main">
+	<div class="w3-black" id="topBar">
+	  <button id="openNav" class="w3-button w3-black w3-xlarge" onclick="w3_open()">&#9776;</button>
+	  <div class="w3-container">	
+		<h1>Rapport de stage</h1>
+	  </div>
+	</div>
+	<div class="w3-container">
+		<div style="margin-top:90px;">
+		
+            <br />
+			<br/>
+			
+			<h3 id="entreprise" class="titre">L'entreprise:</h3>
+			<div class="image_enterprise">
+			<img src="Images/Enterprise.png" titre="Logo de l'entreprise" height="35px"  /> 
+			</div>
+			<p class="section">
+			Enterprise rent-a-car est une société fondée en 1957 par Jack C. Taylor et reprise par son fils Andrew C. Taylor en 2012.<br />
+			L'activité, lancée par Jack Taylor remonte à 1957.
+			<br /><br />
+			<img src="Images/jt.jpg" style="margin-left:40%"/>
+			<br /><br />
+			Il s’agissait alors d’une entreprise de crédit-bail automobile qui ne comptait que sept voitures et qui était exploitée à partir du sous-sol <br /> d’un concessionnaire automobile de la ville natale de son fondateur,St. Louis, dans le Missouri.<br />
+			Cinquante ans plus tard, cette société est aujourd’hui la plus importante et la plus complète de toutes les entreprises de location de voitures <br /> au monde:elle possède et exploite plus d’un million de véhicules.<br />
+			Elle posséde également d’importantes activités au-delà de la location de voitures, dont des sociétés de gestion de flotte, de vente <br /> automobiles,d’auto-partage et de location de véhicules utilitaires.
+			</p>
+			
+			<br/>
+			<br/>
+			<hr />
+			<br/>
+			
+			<h3 id="infra" class="titre">Le service d'infrastructure:</h3>
+			<div class="section">
+			Dans un entreprise le service d'infrastructure est responsable de tout ce qui est réseaux, matériels.<br />
+			J'ai vu les salles où se trouvent les serveurs, routeurs, switchs.<br />
+			Cette salle est rafraîchie par des ventilateurs énormes pour garder la salle à une température aux alentours de 18C° pour éviter toute surchauffe des matériaux.<br />
+			<br />
+				<div id="descImage">
+				<br /><br />
+				Les switchs sont les intermédiaires entre les ordinateurs de l'entreprise et le serveur. <br />Ils permettent une bonne communication des informations.
+				</div>
+				<div id="blocImg">
+					<img src="Images/Switch.JPG" titre="Une pile de switch."/>
+					<img src="Images/SchemaReseau.jpg" titre="Shémas d'un serveur en entreprise." height="255" style="margin-left:85px"/>
+				</div>
+				Le service infrastructure s'occupe aussi des problèmes concernant les connexions. <br />Par exemple: un ordi dont le wifi bug ou un téléphone ne fonctionnant plus sera géré par le service infrastructure.<br />
+				Grâce à l'équipe composée de Mathieu L., Dominique B., Mathieu.C et Olivier.J j'ai pu apprendre à décrypter le langage binaire, à lire des adresses ip, à gérer des ip, à créer un serveur ainsi que le réparer.
+     		</div>		
+			
+			    <br/>
+				<br/>
+				<hr />
+				<br/>
+				
+			    <h3 id="dev" class="titre">Le service de développement:</h3>
+				<div id="TextDev" class="section">
+				Dans une entreprise le service de développement sert à développer des sites afin de réserver une voiture, faciliter le travail de l'entreprise par exemple <br />
+				Ex: <a href="https://www.enterprise.fr/fr/home.html?gclid=Cj0KCQiA5t7UBRDaARIsAOreQtiHQ1t3wOuhveb10JygdrZGeLqq51jIW8VkHt5atcM-NjgwtniR_acaAmQCEALw_wcB&cm_mmc=Google-_-Brand-_-MVG_FR_B_Pure_Brand_Ex-_-enterprise&s_kwcid=AL!968!3!208537930950!e!!g!!enterprise&ef_id=Wpbw7QAAAHFJnTa8:20180301144047:s9x" > 
+				Site de l'entreprise 
+				</a> <br />
+				Les développeurs développent également des outils pour faciliter certaines tâches répétitives à des employés.<br />
+			    
+				Ex:
+				<ul>
+				<li>Resolution</li>
+				<li>Fifi</li>
+				<li>Seek In The City</li>
+				 </ul>
+			
+				
+				</div>
+				<br/>
+				<br/>
+				<hr />
+				<br/>
+				
+		        <h3 id="merci" class="titre">Remerciements:</h3>
+				<div id="Mrc" class="section">
+				Remerciements à Marc.B qui ma permis d'avoir mon stage.<br/>
+				Remerciements à toute l'équipe de l'infrastructure.<br/>
+				Remerciements à toute l'equipe de développement.<br/>
+				Remerciements à toute l'equipe de test de site.<br/>
+				Et bonne continuation à vous tous :) <br />
+				</div>
+				
+				
+				
+			
+
+            		
+			
+ 			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+	</div>
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "16%";
+  document.getElementById("mySidebar").style.width = "16%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+</body>
+</html>
